@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Vadim Novikov](https://up.htmlacademy.ru/adaptive/27/user/2232625).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Остаповец](https://htmlacademy.ru/profile/seraphim).
 
 ---
 
