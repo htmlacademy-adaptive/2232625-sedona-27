@@ -1,0 +1,156 @@
+@control-range: 45px;
+@control-btns: 66px;
+
+.video {
+	position: relative;
+	line-height: 0;
+	margin-bottom: 100px;
+
+	@media @tablet-media {
+		margin-bottom: 40px;
+	}
+
+	@media @desktop-media {
+		width: 800px;
+		margin: 0 auto 85px;
+	}
+
+	&__control {
+		position: absolute;
+		box-sizing: border-box;
+		left: 20px;
+		right: 20px;
+		bottom: -66px;
+		height: 66px;
+		background-color: #f2f2f2;
+
+		display: flex;
+		align-items: center;
+
+		@media @tablet-media {
+			background-color: rgba(0, 0, 0, .6);
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 93px;
+		}
+	}
+
+	&__control-range {
+		width: 235px;
+		height: 3px;
+		padding: 22px;
+		background-color: rgba(0, 0, 0, .6);
+		position: absolute;
+		bottom: 66px;
+
+		&::before {
+			content: "";
+			position: absolute;
+			left: 22px;
+			right: 22px;
+			height: 3px;
+			top: 22px;
+			background-color: rgba(255, 255, 255, .2);
+			cursor: pointer;
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			height: 9px;
+			width: 9px;
+			border-radius: 50%;
+			left: 58px;
+			top: 19px;
+			background-color: #fff;
+			cursor: pointer;
+		}
+
+		@media @tablet-media {
+			order: 2;
+			width: auto;
+			position: relative;
+			bottom: auto;
+			left: auto;
+			right: auto;
+			flex-grow: 1;
+			background-color: transparent;
+			padding: 0;
+			background-color: rgba(255, 255, 255, 0.2);
+
+			&::before {
+				content: none;
+			}
+
+			&::after {
+				left: 113px;
+				top: -3px;
+			}
+		}
+
+	}
+
+	&__control-btn {
+		font-size: 0;
+		border: none;
+		cursor: pointer;
+		background: none;
+
+		&--replay {
+			flex-grow: 1;
+			text-align: left;
+			margin-left: 25px;
+
+			@media @tablet-media {
+				flex-grow: 0;
+				text-align: center;
+				order: 1;
+				margin-left: 35px;
+				margin-right: 42px;
+			}
+		}
+
+		&--subtitles {
+			margin-right: 31px;
+
+			@media @tablet-media {
+				order: 3;
+				margin-right: 31px;
+				margin-left: 42px;
+			}
+		}
+
+		&--full {
+			margin-right: 23px;
+
+			@media @tablet-media {
+				order: 3;
+				margin-right: 41px;
+			}
+		}
+
+		& svg {
+			fill: #5c6870;
+
+			@media @tablet-media {
+				fill: #fff;
+			}
+		}
+
+		@media @tablet-media {
+			&:hover {
+				svg {
+					fill: #333333;
+				}
+			}
+			&:focus, &:active {
+				outline: none;
+
+				svg {
+					fill: #c1c1c1;
+				}
+			}
+		}
+	}
+}

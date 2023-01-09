@@ -1,0 +1,131 @@
+.main-footer {
+	// margin: 40px;
+
+	.clearfix;
+
+	@media @tablet-media {
+		padding: 0 60px;
+	}
+
+	@media @desktop-media {
+		padding: 0;
+	}
+
+	&__hashtag {
+		font-weight: bold;
+		font-size: 21px;
+		margin: 35px;
+
+		@media @tablet-media {
+			width: calc(100% / 3);
+			float: left;
+			text-align: left;
+			padding: 36px 0;
+			margin: 0;
+			box-sizing: border-box;
+			line-height: 48px;
+		}
+
+		@media @desktop-media {
+			text-align: center;
+		}
+	}
+
+	&__develop {
+		margin: 40px;
+		display: block;
+		line-height: 36px;
+		text-decoration: none;
+		color: #000;
+
+		svg {
+			fill: #000;
+			margin-left: 10px;
+			vertical-align: middle;
+		}
+
+		&:hover {
+			svg {
+				fill: @color-primary;
+			}
+		}
+
+		&:focus, &:active {
+			svg {
+				fill: rgba(0, 0, 0, .3);
+			}
+		}
+
+		@media @tablet-media {
+			width: calc(100% / 3);
+			float: left;
+			padding: 36px 0;
+			margin: 0;
+			box-sizing: border-box;
+			line-height: 48px;
+			text-align: right;
+		}
+
+		@media @desktop-media {
+			text-align: center;
+		}
+	}
+
+	&__socail {
+		@media @tablet-media {
+			width: calc(100% / 3);
+			float: left;
+			padding: 36px 0;
+			box-sizing: border-box;
+		}
+	}
+}
+
+.social-block {
+	font-size: 0;
+}
+
+.social-link {
+	display: inline-block;
+	vertical-align: middle;
+	width: 46px;
+	height: 48px;
+	background-color: @color-primary;
+	position: relative;
+
+	.styleguide();
+
+	svg {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		fill: #fff;
+	}
+
+	&:focus {
+		svg {
+			fill: @color-text-focus;
+		}
+	}
+
+
+  &--twitter {
+	 	background: url(../img/icon-twitter.svg) center center no-repeat @color-primary;
+		background-size: 18px;
+	 }
+
+	 &--youtube {
+	 	background: url(../img/icon-youtube.svg) center center no-repeat @color-primary;
+	 	background-size: 20px;
+	 }
+
+	 &--facebook {
+	 	background: url(../img/icon-facebook.svg) center center no-repeat @color-primary;
+	 	background-size: 9px;
+	 }
+
+	&:not(:last-child) {
+		margin-right: 6px;
+	}
+}

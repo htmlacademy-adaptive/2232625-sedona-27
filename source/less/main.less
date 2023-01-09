@@ -1,0 +1,131 @@
+@font-face {
+	font-family: "PT Sans";
+	src: local("fonts/ptsans.woff") format('woff'),
+			 local("fonts/ptsans.woff2") format('woff2'),
+			 url("https://fonts.googleapis.com/css?family=PT+Sans");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "PT Sans";
+	src: local("fonts/ptsansbold.woff") format('woff'),
+			 local("fonts/ptsansbold.woff2") format('woff2'),
+			 url("https://fonts.googleapis.com/css?family=PT+Sans:700");
+	font-style: normal;
+	font-weight: bold;
+}
+
+.placeholder(#000);
+
+html {
+	background-color: #ffffff;
+}
+
+button {
+	font: @font;
+	padding: 0;
+	line-height: 0;
+}
+
+body {
+	min-width: @min-width;
+	width: @min-width;
+	margin: 0 auto;
+	font: @font;
+	text-transform: uppercase;
+	text-align: center;
+	position: relative;
+	background-color: #fff;
+
+	@media @tablet-media {
+		width: @tablet-width;
+	}
+
+	@media @desktop-media {
+		width: @desktop-width;
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		box-shadow: 0 0 15px rgba(0, 0, 0, .2);
+		z-index: -1;
+	}
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+p {
+	color: #333333;
+}
+
+.heading {
+	padding: 20px;
+	padding-bottom: 0;
+
+	&__title {
+		font-size: 18px;
+		line-height: 26px;
+		margin: 18px 10px 27px 10px;
+
+		@media @tablet-media {
+			font-size: 30px;
+
+			.heading--index & {
+				font-size: 21px;
+			}
+		}
+
+		@media @desktop-media {
+			margin-bottom: 32px;
+		}
+	}
+
+	@media @tablet-media {
+		padding: 20px 100px 39px;
+	}
+
+	@media @desktop-media {
+		width: 445px;
+		margin: 0 auto;
+
+		&--index {
+			padding-bottom: 15px;
+		}
+	}
+}
+
+.main {
+
+	@media @tablet-media {
+		padding: 0 60px;
+	}
+
+	@media @desktop-media {
+		padding: 0;
+	}
+}
+
+.btn {
+	background-color: @color-primary;
+	border: none;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 0 20px;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 58px;
+	display: block;
+	box-sizing: border-box;
+	font-size: 21px;
+
+	.styleguide();
+}

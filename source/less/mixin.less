@@ -1,0 +1,48 @@
+.clearfix {
+	&:before,
+	&:after {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+.placeholder(@color: #000) {
+	::-webkit-input-placeholder {
+		color: @color;
+		text-overflow:ellipsis;
+	}
+	::-moz-placeholder {
+		color: @color;
+		text-overflow:ellipsis;
+		opacity: 1;
+	}
+	:-moz-placeholder {
+		color: @color;
+		text-overflow:ellipsis;
+	}
+	:-ms-input-placeholder {
+		color: @color;
+		text-overflow:ellipsis;
+	}
+}
+
+.styleguide() {
+	&:hover {
+		background-color: @color-primary-hvr;
+	}
+
+	&:focus,
+	&:active {
+		background-color: @color-primary-fcs;
+		color: @color-text-focus;
+	}
+}
+
+.text-overflow() {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
