@@ -2,81 +2,83 @@
 @control-btns: 66px;
 
 .video {
-	position: relative;
-	line-height: 0;
-	margin-bottom: 100px;
+  position: relative;
+  line-height: 0;
+  margin-bottom: 100px;
 
-	@media @tablet-media {
-		margin-bottom: 40px;
-	}
+  @media @tablet-media {
+    margin-bottom: 40px;
+  }
 
-	@media @desktop-media {
-		width: 800px;
-		margin: 0 auto 85px;
-	}
+  @media @desktop-media {
+    width: 800px;
+    margin: 0 auto 85px;
+  }
 
-	&__control {
-		position: absolute;
-		box-sizing: border-box;
-		left: 110px;
-		bottom: 70px;
-		background-color: inherit;
-		display: flex;
-		align-items: center;
+  &__control {
+    position: absolute;
+    box-sizing: border-box;
+    left: 110px;
+    bottom: 70px;
+    background-color: inherit;
+    display: flex;
+    align-items: center;
 
-		@media @tablet-media {
-			background-color: inherit;
-			bottom: 220px;
-			left: 270px;
-		}
-    @media @desktop-media{
-left: 342px ;
-bottom: 224px;
+    @media @tablet-media {
+      background-color: inherit;
+      bottom: 220px;
+      left: 270px;
     }
-	}
 
+    @media @desktop-media {
+      left: 342px;
+      bottom: 224px;
+    }
+  }
 
-	&__control-btn {
-		font-size: 0;
-		border: none;
-		cursor: pointer;
-		background: none;
+  &__control-btn {
+    font-size: 0;
+    border: none;
+    cursor: pointer;
+    background: none;
 
-		&--play {
-			flex-grow: 1;
-			text-align: left;
-			margin-left: 25px;
+    &--play {
+      flex-grow: 1;
+      text-align: left;
+      margin-left: 25px;
 
-			@media @tablet-media {
-				flex-grow: 0;
-				text-align: center;
-				order: 1;
-				margin-left: 35px;
-				margin-right: 42px;
-			}
-		}
+      @media @tablet-media {
+        flex-grow: 0;
+        text-align: center;
+        order: 1;
+        margin-left: 35px;
+        margin-right: 42px;
+      }
+    }
 
-		& svg {
-			fill: #5c6870;
+    & svg {
+      fill: #5c6870;
 
-			@media @tablet-media {
-				fill: #fff;
-			}
-		}
+      @media @tablet-media {
+        fill: #ffffff;
+      }
+    }
 
-		@media @tablet-media {
-			&:hover {
-				svg {
-					fill: #333333;
-				}
-			}
-			&:focus, &:active {
-				outline: none;
+    @media @tablet-media {
+      &:hover {
+        svg {
+          fill: #333333;
+        }
+      }
 
-				svg {
-					fill: #c1c1c1;
-				}
-			}
-		}
-	}
+      &:focus,
+      &:active {
+        outline: none;
+
+        svg {
+          fill: #c1c1c1;
+        }
+      }
+    }
+  }
 }
