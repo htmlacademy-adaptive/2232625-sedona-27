@@ -1,0 +1,124 @@
+.features {
+  background-color: @white;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: flex-end;
+  padding: 23px 18px 46px;
+
+  @media (min-width: @tablet-width) {
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: 1/-1;
+    padding: 0;
+    align-items: start;
+  }
+}
+
+.features__item {
+  @media (max-width: @mobile-width-only) {
+    width: 237px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 143px 25px 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 153px 50px 68px;
+  }
+}
+
+.features__title {
+  .title();
+  margin: 0;
+  text-align: start;
+  margin-top: 9px;
+  margin-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+    padding: 0;
+    margin-top: 14px;
+    margin-bottom: 13px;
+
+    &--housing {
+      padding-left: 16px;
+    }
+
+    &--souvenir {
+      padding-right: 16px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    margin: 0;
+
+    &--housing {
+      margin-top: 16px;
+      margin-bottom: 13px;
+      padding-left: 17px;
+    }
+
+    &--eating {
+      margin-top: 12px;
+      margin-bottom: 14px;
+    }
+
+    &--souvenir {
+      margin-top: 16px;
+      margin-bottom: 10px;
+      padding-right: 18px;
+    }
+  }
+}
+
+.features__text {
+  .text();
+  margin: 0;
+  text-align: start;
+
+  @media (max-width: @mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    text-align: center;
+    padding-top: 10px;
+
+    &--housing {
+      padding-left: 16px;
+    }
+
+    &--eating {
+      padding-right: 18px;
+      padding-left: 21px;
+    }
+
+    &--souvenir {
+      padding-right: 22px;
+      padding-bottom: 4px;
+      padding-top: 14px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--eating {
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    &--souvenir {
+      padding-left: 4px;
+      padding-bottom: 0;
+    }
+  }
+}
