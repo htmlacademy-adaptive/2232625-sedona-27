@@ -1,0 +1,144 @@
+.footer {
+  padding: 14px 20px 20px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 648px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 9px 60px 36px;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
+    margin: 0 auto;
+  }
+}
+
+.footer__hashtag {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: @black;
+  text-align: center;
+  font-size: 21px;
+  font-weight: 700;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    max-width: 200px;
+    margin: 0;
+  }
+
+  &:hover {
+    color: #669ec0;
+  }
+
+  &:active,
+  &:focus {
+    color: #b3b3b3;
+  }
+}
+
+.footer__list {
+  .list();
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 156px;
+  gap: 6px;
+  padding: 32px 0 25px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 0 0 13px;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 8px;
+  }
+}
+
+.footer__list--catalog {
+  @media (min-width: @tablet-width) {
+    padding: 0 5px 0 0;
+  }
+}
+
+.footer__link {
+  display: block;
+  position: relative;
+  width: 48px;
+  height: 48px;
+  background-color: @base-color;
+
+
+  &:hover {
+    background-color: @hover-color;
+  }
+
+  &:focus,
+  &:active {
+    background-color: @active-color;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
+}
+
+.footer__link-logo {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 50%;
+  left: 50%;
+  fill: @white;
+  transform: translate(-50%, -50%);
+}
+
+.footer__copyright-logo {
+  vertical-align: middle;
+  padding-left: 10px;
+}
+
+.footer__copyright-logo--index {
+  @media (min-width: @tablet-width) {
+    padding-right: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 9px;
+  }
+}
+
+.footer__copyright-link {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: @black;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 16px 55px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 150px;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 2px;
+  }
+
+  &:hover {
+    color: #669ec0;
+  }
+
+  &:active,
+  &:focus {
+    color: #b3b3b3;
+  }
+}

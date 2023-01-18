@@ -1,217 +1,217 @@
 <!DOCTYPE html>
-<html class="no-js" lang="ru">
+<html class="page" lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Sedona | Index</title>
-  <script>
-    document.getElementsByTagName('html')[0].className = 'js';
-  </script>
-  <link rel="stylesheet" href="css/style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sedona Photo</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preload" href="fonts/ptsans.woff2" type="font/wwof2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" type="font/wwof2" as="font" crossorigin="anonymous">
 </head>
 
-<body>
-  <svg style="display:none">
-    <symbol id="icon-vk">
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M23.45 0.948C23.616 0.402 23.45 0 22.655 0H20.03C19.362 0 19.054 0.347 18.887 0.73C18.887 0.73 17.552 3.926 15.661 6.002C15.049 6.604 14.771 6.795 14.437 6.795C14.27 6.795 14.019 6.604 14.019 6.057V0.948C14.019 0.292 13.835 0 13.279 0H9.151C8.734 0 8.483 0.304 8.483 0.593C8.483 1.214 9.429 1.358 9.526 3.106V6.904C9.526 7.737 9.373 7.888 9.039 7.888C8.149 7.888 5.984 4.677 4.699 1.003C4.45 0.288 4.198 0 3.527 0H0.9C0.15 0 0 0.347 0 0.73C0 1.412 0.89 4.8 4.145 9.281C6.315 12.341 9.37 14 12.153 14C13.822 14 14.028 13.632 14.028 12.997V10.684C14.028 9.947 14.186 9.8 14.715 9.8C15.105 9.8 15.772 9.992 17.33 11.467C19.11 13.216 19.403 14 20.405 14H23.03C23.78 14 24.156 13.632 23.94 12.904C23.702 12.18 22.852 11.129 21.725 9.882C21.113 9.172 20.195 8.407 19.916 8.024C19.527 7.533 19.638 7.314 19.916 6.877C19.916 6.877 23.116 2.451 23.449 0.948H23.45Z" fill="white"/>
-    </symbol>
-    <symbol id="icon-youtube">
-      <path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835
-      C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z" />
-    </symbol>
-    <symbol id="icon-tg">
-      <path d="M21.4393 1.62225L18.2705 16.566C18.0313 17.6205 17.408 17.883 16.5223 17.3865L11.6938 13.8285L9.36427 16.0695C9.10627 16.3275 8.89102 16.5428 8.39377 16.5428L8.74102 11.6258L17.6893 3.54C18.0785 3.1935 17.6045 3.00075 17.0848 3.348L6.02227 10.314L1.25977 8.823C0.224021 8.49975 0.205271 7.78725 1.47577 7.29L20.1035 0.113253C20.966 -0.209997 21.7205 0.305253 21.4393 1.623V1.62225Z" fill="white"/>
-    </symbol>
-    <symbol id="icon-video-play">
-        <path d="M48 27L0 54L2.42273e-06 0L48 27Z" fill="white" fill-opacity="0.7"/>
-    </symbol>
-    <symbol id="icon-like">
-      <path id="Shape"
-        d="M12.383,3.646l-0.637,2.929L11.219,9H13.7h6.2v2c0,0.018,0,0.037,0.001,0.058L17,18H8V8.029 l0.014-0.015L12.383,3.646 M2,10v8V10 M13.2,0L6.6,6.6C6.2,6.9,6,7.4,6,8v10c0,1.1,0.9,2,2,2h9c0.8,0,1.5-0.5,1.8-1.2l3-7.1 C21.9,11.5,21.9,11.2,21.9,11V9H22c0-1.1-0.9-2-2-2h-6.3l1-4.6V2.1c0-0.4-0.2-0.8-0.4-1.1L13.2,0L13.2,0z M4,8H0v12h4V8L4,8z M22,9c0,0.033,0,0.044,0,0.044V9L22,9z" />
-    </symbol>
-    <symbol id="icon-htmlacademy">
-      <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334
-      L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5
-      l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787
-      l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65
-      l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021
-      L13.472,31.85L1.925,24.979V15.127z" />
-    </symbol>
-  </svg>
-  <header class="main-header">
-    <nav class="main-menu">
-      <button type="button" class="main-menu__button">
-        Открыть меню
-      </button>
-      <ul class="main-menu__list">
-        <li class="main-menu__item">
-          <a class="main-menu__link" href="index.html">Главная</a>
+<body class="page__body page__body--catalog">
+  <div class="page-container">
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html">
+        <img src="img/logo-sedona.svg" width="185" height="96" alt="Логотип города Седона.">
+      </a>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--current" href="#" aria-current="page">Фото и видео</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru/">HTML academy</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="hero-banner hero-banner--small">
+        <img class="hero-banner__image hero-banner__image--small" src="img/text-sedona.svg" loading="lazy" alt="Sedona."
+          width="229" height="39">
+      </div>
+    </header>
+
+    <main class="page-content">
+      <header class="page-intro page-intro--catalog">
+        <h1 class="page-intro__header page-intro__header--catalog">Фото и видео</h1>
+        <p class="page-intro__text page-intro__text--catalog">Не можете решиться на путешествие из-за курса? Фотографии
+          помогут вам забыть о политике и экономике.</p>
+      </header>
+
+      <section class="catalog">
+        <h2 class="visually-hidden">Галерея</h2>
+        <ul class="catalog__list">
+          <li class="catalog__item catalog__item--first">
+            <a class="catalog__img">
+              <picture>
+                <source class="catalog__image" media="(min-width: 1200px)"
+                  srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x" width="1200" height="400">
+                <source class="catalog__image" media="(min-width:768px)"
+                  srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x" width="648" height="400">
+                <img class="catalog__image" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x"
+                  loading="lazy" width="280" height="280" alt="#">
+              </picture>
+            </a>
+            <div class="catalog__credits">
+              <div class="catalog__credits-wrapper">
+                <p class="catalog__credits-title">Неродные просторы</p>
+                <p class="catalog__credits-author">Автор фото: Борис</p>
+              </div>
+              <div class="catalog__credits-like">
+                <button class="button catalog__button" type="button" aria-label="Поставить лайк">
+                  <svg width="30" height="27" aria-hidden="true" role="img" focusable="false">
+                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                  </svg>
+                </button>
+                <span class="visually-hidden">Количество лайков</span>
+                <span class="catalog__credits-like-number">1350</span>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__img">
+              <picture>
+                <source class="catalog__image" media="(min-width: 1200px)"
+                  srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x" width="400" height="267">
+                <source class="catalog__image" media="(min-width:768px)"
+                  srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x" width="324" height="267">
+                <img class="catalog__image" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x"
+                  loading="lazy" width="280" height="280" alt="#">
+              </picture>
+            </a>
+            <div class="catalog__credits">
+              <div class="catalog__credits-wrapper catalog__credits-wrapper--small">
+                <p class="catalog__credits-title catalog__credits-title--small">Местная растительность</p>
+                <p class="catalog__credits-author">Автор фото: Сергей</p>
+              </div>
+              <div class="catalog__credits-like catalog__credits-like--small">
+                <button class="button catalog__button" type="button" aria-label="Поставить лайк">
+                  <svg width="30" height="27" aria-hidden="true" role="img" focusable="false">
+                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                  </svg>
+                </button>
+                <span class="visually-hidden">Количество лайков</span>
+                <span class="catalog__credits-like-number">143</span>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__img">
+              <picture>
+                <source class="catalog__image" media="(min-width: 1200px)"
+                  srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x" width="400" height="267">
+                <source class="catalog__image" media="(min-width:768px)"
+                  srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x" width="324" height="267">
+                <img class="catalog__image" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x"
+                  loading="lazy" width="280" height="280" alt="#">
+              </picture>
+            </a>
+            <div class="catalog__credits">
+              <div class="catalog__credits-wrapper catalog__credits-wrapper--small">
+                <p class="catalog__credits-title catalog__credits-title--small">Дорога на север</p>
+                <p class="catalog__credits-author">Автор фото: Петр</p>
+              </div>
+              <div class="catalog__credits-like catalog__credits-like--small">
+                <button class="button catalog__button" type="button" aria-label="Поставить лайк">
+                  <svg width="30" height="27" aria-hidden="true" role="img" focusable="false">
+                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                  </svg>
+                </button>
+                <span class="visually-hidden">Количество лайков</span>
+                <span class="catalog__credits-like-number">96</span>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__img">
+              <picture>
+                <source class="catalog__image" media="(min-width: 1200px)"
+                  srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x" width="400" height="267">
+                <source class="catalog__image" media="(min-width:768px)"
+                  srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x" width="324" height="267">
+                <img class="catalog__image" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x"
+                  loading="lazy" width="280" height="280" alt="#">
+              </picture>
+            </a>
+            <div class="catalog__credits">
+              <div class="catalog__credits-wrapper catalog__credits-wrapper--small">
+                <p class="catalog__credits-title catalog__credits-title--small">Мост дьявола</p>
+                <p class="catalog__credits-author">Автор фото: Антон</p>
+              </div>
+              <div class="catalog__credits-like catalog__credits-like--small">
+                <button class="button catalog__button" type="button" aria-label="Поставить лайк">
+                  <svg width="30" height="27" aria-hidden="true" role="img" focusable="false">
+                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                  </svg>
+                </button>
+                <span class="visually-hidden">Количество лайков</span>
+                <span class="catalog__credits-like-number">254</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="video">
+        <h2 class="video__title">Все еще сомневаетесь?</h2>
+        <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
+        </p>
+
+        <div class="video__container">
+          <button class="video__button">
+            <span class="visually-hidden">Воспроизвести</span>
+          </button>
+          <video class="video__container-video" width="280" height="177" poster="img/video-desktop.jpg"></video>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a class="footer__hashtag" href="#">#VisitSedona</a>
+      <ul class="footer__list footer__list--catalog">
+        <li class="footer__item">
+          <a class="footer__link footer__link--vkontakte" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Мы во ВКонтакте</span>
+            <svg class="footer__link-logo" aria-hidden="true" role="img" focusable="false" width="24" height="24">
+              <use xlink:href="img/sprite.svg#icon-vk"></use>
+            </svg>
+          </a>
         </li>
-        <li class="main-menu__item">
-          <a class="main-menu__link">Фото и видео</a>
+        <li class="footer__item">
+          <a class="footer__link footer__link--telegram" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Мы в Телеграме</span>
+            <svg class="footer__link-logo" aria-hidden="true" role="img" focusable="false" width="24" height="24">
+              <use xlink:href="img/sprite.svg#icon-tg"></use>
+            </svg>
+          </a>
         </li>
-        <li class="main-menu__item">
-          <a class="main-menu__link" href="form.html">Форма отзыва</a>
-        </li>
-        <li class="main-menu__item">
-          <a class="main-menu__link" href="https://htmlacademy.ru/">HTML Academy</a>
+        <li class="footer__item">
+          <a class="footer__link footer__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Мы в Youtube</span>
+            <svg class="footer__link-logo" aria-hidden="true" role="img" focusable="false" width="24" height="24">
+              <use xlink:href="img/sprite.svg#icon-youtube"></use>
+            </svg>
+          </a>
         </li>
       </ul>
-      <a href="index.html" class="main-menu__logo">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-          <img src="img/logo-sedona-mobile.svg" alt="Logo">
-        </picture>
-      </a>
-    </nav>
-    <div class="promo">
-      <img class="promo__pick" src="img/text-sedona.svg" alt="Promo text">
-    </div>
-  </header>
-  <main class="main">
-    <section class="heading">
-      <h1 class="heading__title">Фото и видео</h1>
-      <p class="heading__desc">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и
-        экономике.</p>
-    </section>
-    <div class="post-wrap">
-      <article class="post post--main">
-        <a class="post__link" href="#">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x,img/photo-1-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
-            <img srcset="img/photo-1-mobile@2x.jpg 2x" src="img/photo-1-mobile.jpg" alt="Post pick" class="post__pick">
-          </picture>
-        </a>
-        <div class="post__info">
-          <div class="post__info-wrap">
-            <h2 class="post__title">Неродные просторы</h2>
-            <div class="post__author">Автор фото: Борис</div>
-          </div>
-          <button class="post__like" type="button">
-            <svg width="22" height="21">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-like"></use>
-            </svg>
-            1350
-          </button>
-        </div>
-      </article>
-      <article class="post">
-        <a class="post__link" href="#">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x,img/photo-2-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
-            <img src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" sizes="50%" alt="Post pick"
-              class="post__pick">
-          </picture>
-        </a>
-        <div class="post__info">
-          <div class="post__info-wrap">
-            <h2 class="post__title">Местная растительность</h2>
-            <div class="post__author">Автор фото: Сергей</div>
-          </div>
-          <button class="post__like" type="button">
-            <svg width="22" height="21">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-like"></use>
-            </svg>
-            143
-          </button>
-        </div>
-      </article>
-      <article class="post">
-        <a class="post__link" href="#">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x,img/photo-3-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
-            <img src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Post pick" class="post__pick">
-          </picture>
-        </a>
-        <div class="post__info">
-          <div class="post__info-wrap">
-            <h2 class="post__title">Дорога на север</h2>
-            <div class="post__author">Автор фото: Петр</div>
-          </div>
-          <button class="post__like" type="button">
-            <svg width="22" height="21">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-like"></use>
-            </svg>
-            96
-          </button>
-        </div>
-      </article>
-      <article class="post">
-        <a class="post__link" href="#">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg ,img/photo-4-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg, img/photo-4-tablet@2x.jpg 2x">
-            <img src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Post pick" class="post__pick">
-          </picture>
-        </a>
-        <div class="post__info">
-          <div class="post__info-wrap">
-            <h2 class="post__title">Мост дьявола</h2>
-            <div class="post__author">Автор фото: Антон</div>
-          </div>
-          <button class="post__like" type="button">
-            <svg width="22" height="21">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-like"></use>
-            </svg>
-            254
-          </button>
-        </div>
-      </article>
-    </div>
-    <section class="presentation">
-      <h2 class="presentation__title">Все еще сомневаетесь?</h2>
-      <p class="presentation__desc">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
-        раз!</p>
-      <div class="video">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg">
-          <source media="(min-width: 768px)" srcset="img/video-tablet.jpg">
-          <img class="video__pick" src="img/video-mobile.jpg" alt="">
-        </picture>
-
-        <div class="video__control">
-          <div class="video__control-range"></div>
-          <button type="button" class="video__control-btn video__control-btn--play">
-            <svg width="48" height="54" class="video__control-svg">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-video-play"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="main-footer">
-    <div class="main-footer__hashtag">#visitsedona</div>
-    <div class="main-footer__socail social-block">
-      <a href="https://vk.com/htmlacademy" class="social-link">
-        <svg width="24" height="14">
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-vk"></use>
+      <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+        Разработано
+        <svg class="footer__copyright-logo" aria-hidden="true" role="img" focusable="false" width="27" height="34">
+          <use xlink:href="img/sprite.svg#htmlacademy"></use>
         </svg>
       </a>
-      <a href="tg://resolve?domain=htmlacademy" class="social-link">
-        <svg width="22" height="18">
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-tg"></use>
-        </svg>
-      </a>
-      <a href="https://www.youtube.com/user/htmlacademyru" class="social-link">
-        <svg width="20" height="14">
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-youtube"></use>
-        </svg>
-      </a>
-    </div>
-    <a href="https://htmlacademy.ru/intensive/adaptive" class="main-footer__develop">
-      Разработано
-      <svg width="27" height="35">
-        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-htmlacademy"></use>
-      </svg>
-    </a>
-  </footer>
-  <script src="js/script.min.js"></script>
+    </footer>
+  </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

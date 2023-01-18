@@ -1,0 +1,246 @@
+.catalog {
+  @media (min-width: @tablet-width) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
+}
+
+.catalog__header {
+  padding: 30px 20px 44px 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 458px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+.catalog__slogan {
+  .title();
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.catalog__intro {
+  .text();
+  margin: 0;
+}
+
+.catalog__list {
+  .list();
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    width: 648px;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    width: 1200px;
+    padding: 0;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.catalog__item {
+  @media (max-width: @mobile-width-only) {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 20px 20px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: #e5e5e5;
+      top: 0;
+      left: 0;
+      content: "";
+    }
+
+    &:nth-last-child(1)::after {
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: #e5e5e5;
+      bottom: 0;
+      left: 0;
+      content: "";
+    }
+  }
+
+  @media (min-width: @tablet-width) and (max-width: 1199px) {
+    &:nth-child(2n+3) .catalog__credits {
+      background-color: #e5e5e5;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
+}
+
+.catalog__item--first {
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    grid-column: 1 / -1;
+  }
+}
+
+.catalog__img {
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+    margin-bottom: -8px;
+  }
+}
+
+.catalog__credits {
+  padding-top: 15px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    background-color: #f2f2f2;
+    padding-right: 20px;
+    padding-top: 24px;
+    padding-bottom: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 78px;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.catalog__credits-wrapper {
+  width: 178px;
+
+  @media (min-width: @desktop-width) {
+    padding-left: 21px;
+    padding-top: 20px;
+
+    &--small {
+      padding-left: 25px;
+      padding-top: 16px;
+    }
+  }
+}
+
+.catalog__credits-title {
+  font-size: 14px;
+  line-height: 21px;
+  color: @black;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+
+  @media (min-width: @desktop-width) {
+    color: @white;
+
+    &--small {
+      padding-bottom: 4px;
+    }
+  }
+}
+
+.catalog__credits-author {
+  font-size: 14px;
+  line-height: 21px;
+  color: @text-color;
+  font-weight: 400;
+  margin: 0;
+
+  @media (min-width: @desktop-width) {
+    color: @white;
+  }
+}
+
+.catalog__credits-like {
+  font-size: 14px;
+  line-height: 21px;
+  color: @black;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  width: 69px;
+  padding-top: 12px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: @desktop-width) {
+    color: @white;
+    padding-right: 20px;
+    padding-top: 3px;
+
+    &--small {
+      padding-top: 5px;
+    }
+  }
+}
+
+.catalog__credits-like-number {
+  @media (min-width: @tablet-width) {
+    padding-left: 3px;
+  }
+}
+
+.catalog__button {
+  background-color: transparent;
+  opacity: 0.3;
+  margin: 0;
+  margin-right: 7px;
+  color: @black;
+
+  &:hover {
+    color: @black;
+    opacity: 1;
+    background-color: transparent;
+  }
+
+  &:active,
+  &:focus {
+    color: @black;
+    background-color: transparent;
+    opacity: 0.5;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    opacity: 1;
+    color: @white;
+
+    &:hover {
+      color: @white;
+      opacity: 0.7;
+    }
+
+    &:active,
+    &:focus {
+      color: @white;
+      opacity: 0.5;
+    }
+  }
+}
