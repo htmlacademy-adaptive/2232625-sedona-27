@@ -4,10 +4,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>#VisitSedona</title>
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="preload" href="fonts/ptsans.woff2" type="font/wwof2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/ptsansbold.woff2" type="font/wwof2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="icon" href="./favicon.ico">
+  <link rel="icon" href="./img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./img/favicon-180.png">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="preload" href="./fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -57,6 +62,12 @@
                 жизнь</p>
             </div>
             <picture class="advantages__group">
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/photo-city-desktop.webp 1x, img/photo-city-desktop@2x.webp 2x" width="800" height="256">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/photo-city-tablet.webp 1x, img/photo-city-tablet@2x.webp 2x" width="512" height="256">
+              <source type="image/webp" srcset="img/photo-city-mobile.webp 1x, img/photo-city-mobile@2x.webp 2x"
+                width="320" height="260">
               <source media="(min-width: 1200px)"
                 srcset="img/photo-city-desktop.jpg 1x, img/photo-city-desktop@2x.jpg 2x" width="800" height="256">
               <source media="(min-width:768px)" srcset="img/photo-city-tablet.jpg 1x, img/photo-city-tablet@2x.jpg 2x"
@@ -90,6 +101,12 @@
                 конечно</p>
             </div>
             <picture class="advantages__group advantages__group-secondary">
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/devil-bridge-desktop.webp 1x, img/devil-bridge-desktop@2x.webp 2x" width="800" height="256">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/devil-bridge-tablet.webp 1x, img/devil-bridge-tablet@2x.webp 2x" width="512" height="256">
+              <source type="image/webp" srcset="img/devil-bridge-mobile.webp 1x, img/devil-bridge-mobile@2x.webp 2x"
+                width="320" height="260">
               <source media="(min-width: 1200px)"
                 srcset="img/devil-bridge-desktop.jpg 1x, img/devil-bridge-desktop@2x.jpg 2x" width="800" height="256">
               <source media="(min-width:768px)"
@@ -133,6 +150,11 @@
 
         <div class="search-map-off">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
             <img class="search-map-off__img" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x" loading="lazy"

@@ -3,6 +3,7 @@
   position: relative;
   padding-top: 17px;
   padding-bottom: 24px;
+  z-index: 1;
 
   @media (min-width: @tablet-width) {
     padding-bottom: 28px;
@@ -25,9 +26,11 @@
 }
 
 .search-map-off {
-  position: relative;
+  position: absolute;
+  top: 16px;
   max-width: 100%;
   height: auto;
+  z-index: -1;
 }
 
 .search-map-off__mark {
@@ -36,6 +39,7 @@
   left: 146px;
   width: 27px;
   height: 27px;
+  z-index: -1;
 
   @media (min-width: @tablet-width) {
     top: 164px;
