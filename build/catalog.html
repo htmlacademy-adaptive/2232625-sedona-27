@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Sedona Photo</title>
+  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="icon" href="./favicon.ico">
+  <link rel="icon" href="./img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./img/favicon-180.png">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="preload" href="./fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+</head>
+
+<body class="page__body page__body--catalog">
+  <div class="page-container">
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html">
+        <img src="img/logo-sedona.svg" width="185" height="96" alt="Логотип города Седона.">
+      </a>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--current" href="#" aria-current="page">Фото и видео</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru/">HTML academy</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="hero-banner hero-banner--small">
+        <img class="hero-banner__image hero-banner__image--small" src="img/text-sedona.svg" loading="lazy" alt="Sedona."
+          width="229" height="39">
+      </div>
+    </header>
+
+    <main class="page-content">
+      <header class="page-intro page-intro--catalog">
+        <h1 class="page-intro__header page-intro__header--catalog">Фото и видео</h1>
+        <p class="page-intro__text page-intro__text--catalog">Не можете решиться на путешествие из-за курса? Фотографии
+          помогут вам забыть о политике и экономике.</p>
+      </header>
+
+      <section class="catalog">
+        <h2 class="visually-hidden">Галерея</h2>
+        <ul class="catalog__list">
+          <li class="catalog__item catalog__item--first">
+            <a class="catalog__img">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop@2x.webp 2x" width="1200" height="400">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/photo-1-tablet.webp 1x, img/photo-1-tablet@2x.webp 2x" width="648" height="400">
+                <source type="image/webp"
+                  srcset="img/photo-1-mobile.webp 1x, img/photo-1-mobile@2x.webp 2x" width="280" height="280">
+                <source media="(min-width: 1200px)"
+                  srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x" width="1200" height="400">
+                <source media="(min-width:768px)"
+                  srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x" width="648" height="400">
+                <img class="catalog__image" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x"
+                  loading="lazy" width="280" height="280" alt="#">
+              </picture>
+            </a>
+            <div class="catalog__credits">
+              <div class="catalog__credits-wrapper">
+                <p class="catalog__credits-title">Неродные просторы</p>
+                <p class="catalog__credits-author">Автор фото: Борис</p>
+              </div>
+              <div class="catalog__credits-like">
+                <button class="button catalog__button" type="button" aria-label="Поставить лайк">
+                  <svg width="30" height="27" aria-hidden="true" role="img" focusable="false">
+                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                  </svg>
+                </button>
+                <span class="visually-hidden">Количество лайков</span>
+                <span class="catalog__credits-like-number">1350</span>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__img">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/photo-2-desktop.webp 1x, img/photo-2-desktop@2x.webp 2x" width="400" height="267">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/photo-2-tablet.webp 1x, img/photo-2-tablet@2x.webp 2x" width="324" height="267">
+                <source type="image/webp"
+                  srcset="img/photo-2-mobile.webp 1x, img/photo-2-mobile@2x.webp 2x" width="280" height="280">
+                <source media="(min-width: 1200px)"
+                  srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x" width="400" height="267">
+                <source media="(min-width:768px)"
+                  srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x" width="324" height="267">
+                <img class="catalog__image" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x"
+                  loading="lazy" width="280" height="280" alt="#">
+              </picture>
+            </a>
+            <div class="catalog__credits">
+              <div class="catalog__credits-wrapper catalog__credits-wrapper--small">
+                <p class="catalog__credits-title catalog__credits-title--small">Местная растительность</p>
+                <p class="catalog__credits-author">Автор фото: Сергей</p>
+              </div>
+              <div class="catalog__credits-like catalog__credits-like--small">
+                <button class="button catalog__button" type="button" aria-label="Поставить лайк">
+                  <svg width="30" height="27" aria-hidden="true" role="img" focusable="false">
+                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                  </svg>
+                </button>
+                <span class="visually-hidden">Количество лайков</span>
+                <span class="catalog__credits-like-number">143</span>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__img">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/photo-3-desktop.webp 1x, img/photo-3-desktop@2x.webp 2x" width="400" height="267">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/photo-3-tablet.webp 1x, img/photo-3-tablet@2x.webp 2x" width="324" height="267">
+                <source type="image/webp"
+                  srcset="img/photo-3-mobile.webp 1x, img/photo-3-mobile@2x.webp 2x" width="280" height="280">
+                <source media="(min-width: 1200px)"
+                  srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x" width="400" height="267">
+                <source media="(min-width:768px)"
+                  srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x" width="324" height="267">
+                <img class="catalog__image" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x"
+                  loading="lazy" width="280" height="280" alt="#">
+              </picture>
+            </a>
+            <div class="catalog__credits">
+              <div class="catalog__credits-wrapper catalog__credits-wrapper--small">
+                <p class="catalog__credits-title catalog__credits-title--small">Дорога на север</p>
+                <p class="catalog__credits-author">Автор фото: Петр</p>
+              </div>
+              <div class="catalog__credits-like catalog__credits-like--small">
+                <button class="button catalog__button" type="button" aria-label="Поставить лайк">
+                  <svg width="30" height="27" aria-hidden="true" role="img" focusable="false">
+                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                  </svg>
+                </button>
+                <span class="visually-hidden">Количество лайков</span>
+                <span class="catalog__credits-like-number">96</span>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__img">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/photo-4-desktop.webp 1x, img/photo-4-desktop@2x.webp 2x" width="400" height="267">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/photo-4-tablet.webp 1x, img/photo-4-tablet@2x.webp 2x" width="324" height="267">
+                <source type="image/webp"
+                  srcset="img/photo-4-mobile.webp 1x, img/photo-4-mobile@2x.webp 2x" width="280" height="280">
+                <source media="(min-width: 1200px)"
+                  srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x" width="400" height="267">
+                <source media="(min-width:768px)"
+                  srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x" width="324" height="267">
+                <img class="catalog__image" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x"
+                  loading="lazy" width="280" height="280" alt="#">
+              </picture>
+            </a>
+            <div class="catalog__credits">
+              <div class="catalog__credits-wrapper catalog__credits-wrapper--small">
+                <p class="catalog__credits-title catalog__credits-title--small">Мост дьявола</p>
+                <p class="catalog__credits-author">Автор фото: Антон</p>
+              </div>
+              <div class="catalog__credits-like catalog__credits-like--small">
+                <button class="button catalog__button" type="button" aria-label="Поставить лайк">
+                  <svg width="30" height="27" aria-hidden="true" role="img" focusable="false">
+                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                  </svg>
+                </button>
+                <span class="visually-hidden">Количество лайков</span>
+                <span class="catalog__credits-like-number">254</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="video">
+        <h2 class="video__title">Все еще сомневаетесь?</h2>
+        <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
+        </p>
+
+        <div class="video__container">
+          <button class="video__button">
+            <span class="visually-hidden">Воспроизвести</span>
+          </button>
+          <video class="video__container-video" width="280" height="177" poster="img/video-desktop.jpg"></video>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a class="footer__hashtag" href="#">#VisitSedona</a>
+      <ul class="footer__list footer__list--catalog">
+        <li class="footer__item">
+          <a class="footer__link footer__link--vkontakte" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Мы во ВКонтакте</span>
+            <svg class="footer__link-logo" aria-hidden="true" role="img" focusable="false" width="24" height="24">
+              <use xlink:href="img/sprite.svg#icon-vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link footer__link--telegram" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Мы в Телеграме</span>
+            <svg class="footer__link-logo" aria-hidden="true" role="img" focusable="false" width="24" height="24">
+              <use xlink:href="img/sprite.svg#icon-tg"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link footer__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Мы в Youtube</span>
+            <svg class="footer__link-logo" aria-hidden="true" role="img" focusable="false" width="24" height="24">
+              <use xlink:href="img/sprite.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+        Разработано
+        <svg class="footer__copyright-logo" aria-hidden="true" role="img" focusable="false" width="27" height="34">
+          <use xlink:href="img/sprite.svg#htmlacademy"></use>
+        </svg>
+      </a>
+    </footer>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
