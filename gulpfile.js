@@ -144,6 +144,7 @@ optimizeImages,
 gulp.parallel(
 styles,
 html,
+manifest,
 scripts,
 svg,
 sprite,
