@@ -93,7 +93,7 @@
 
     &--opinion {
       grid-template-columns: 280px 280px 238px;
-      gap: 28px;
+      gap: 0 28px;
       padding-left: 53px;
       padding-right: 53px;
       margin-bottom: 18px;
@@ -108,7 +108,7 @@
       flex-direction: row;
       justify-content: flex-start;
       margin-bottom: 18px;
-      gap: 65px;
+      gap: 0 65px;
     }
 
     &--textarea {
@@ -132,6 +132,7 @@
   line-height: 21px;
   font-weight: 400;
   text-transform: uppercase;
+  color: @text-color;
 
   &--contacts {
     @media (min-width: @tablet-width) {
@@ -144,11 +145,16 @@
       padding-right: 60px;
     }
   }
+
+  &--textarea{
+    padding-left: 0;
+  }
+
 }
 
 .form__input {
   display: block;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -173,7 +179,8 @@
   }
 
   &::placeholder {
-    color: rgba(0, 0, 0, 0.3);
+    color: @black;
+    opacity: 0.3;
   }
 }
 
@@ -188,54 +195,34 @@
   }
 }
 
-.form__input--contacts-tel {
+.form__input-field {
   margin: 0;
 }
 
-.form__input--contacts-tel::before {
+.form__input-field--tel::before {
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
   content: url("../img/icon-phone.svg");
-  top: 10%;
+  top: 21px;
   right: 0;
   width: 58px;
   height: 58px;
   background-color: #e6e6e6;
-
-  @media (min-width: @tablet-width) {
-    top: 7.4%;
-  }
-
-  @media (min-width: @desktop-width) {
-    top: 7%;
-  }
 }
 
-.form__input--contacts-email {
-  margin: 0;
-}
-
-.form__input--contacts-email::before {
+.form__input-field--email::before {
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
   content: url("../img/icon-mail.svg");
-  top: 54%;
+  top: 116px;
   right: 0;
   width: 58px;
   height: 58px;
   background-color: #e6e6e6;
-
-  @media (min-width: @tablet-width) {
-    top: 40.5%;
-  }
-
-  @media (min-width: @desktop-width) {
-    top: 38.5%;
-  }
 }
 
 .form__input--contacts {
@@ -407,7 +394,7 @@
 }
 
 .form__button {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   font-weight: 700;
   width: 100%;
@@ -428,11 +415,11 @@
 }
 
 .form__legend {
-  font-family: inherit;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 12px;
   line-height: 21px;
   font-weight: 400;
-  color: rgba(51, 51, 51, 0.6);
+  color: @text-color;
   text-transform: uppercase;
   text-align: right;
   padding-top: 3px;
@@ -450,7 +437,7 @@
   width: 248px;
   height: 118px;
   background-color: #f2f2f2;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -460,6 +447,27 @@
   margin-left: 18px;
   margin-right: 18px;
   resize: none;
+
+  &::placeholder{
+    color: @black;
+    opacity: 0.3;
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active,
+  &:focus {
+    background-color: @white;
+    outline: 4px solid #e5e5e5;
+    outline-offset: -4px;
+  }
+
+  &::placeholder {
+    color: @black;
+    opacity: 0.3;
+  }
 
   @media (min-width: @tablet-width) {
     display: block;
