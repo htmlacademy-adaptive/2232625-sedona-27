@@ -34,6 +34,13 @@ return gulp.src('source/*.html')
 .pipe(gulp.dest('build'));
 }
 
+// Manifest
+
+const manifest = () => {
+  return gulp.src('source/*.webmanifest')
+  .pipe(gulp.dest('build'));
+  }
+
 // Scripts
 
 const scripts = () => {
@@ -153,6 +160,7 @@ copyImages,
 gulp.parallel(
 styles,
 html,
+manifest,
 scripts,
 svg,
 sprite,

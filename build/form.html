@@ -70,12 +70,12 @@
 
         <fieldset class="form__group form__group--contacts">
           <legend class="form__title form__title--contacts">Контактная информация:</legend>
-          <p class="form__input--contacts-tel">
+          <p class="form__input-field form__input-field--tel">
           <label class="form__label form__label--contacts" for="input-phone">Контактный телефон*:</label>
           <input class="form__input form__input--contacts" type="tel" id="input-phone" name="telephone"
             placeholder="Введите телефон" required>
           </p>
-          <p class="form__input--contacts-email">
+          <p class="form__input-field form__input-field--email">
           <label class="form__label form__label--contacts" for="input-email">Электронная почта*:</label>
           <input class="form__input form__input--contacts" type="email" id="input-email" name="email"
             placeholder="Введите e-mail" required>
@@ -142,6 +142,7 @@
 
         <fieldset class="form__group form__group--textarea form__group--decorate">
           <legend class="form__title form__title--textarea form__title--decorate">Опишите свои эмоции:</legend>
+          <label class="form__label form__label--textarea visually-hidden" for="textarea">Описание ваших впечатлений</label>
           <textarea class="form__comment" id="textarea" placeholder="Опишите подробно все свои восторги" name="comment"
             rows="4" cols="50"></textarea>
         </fieldset>
@@ -200,7 +201,7 @@
   </div>
 
   <div class="modal-container modal">
-    <div class="modal__content modal-container--success modal">
+    <div class="modal__content modal__content--success modal">
       <div class="modal__wrapper modal__wrapper--success">
         <p class="modal__title modal__title--success">Ваш отзыв отправлен!</p>
         <p class="modal__text modal__text--success">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>&nbsp;В
